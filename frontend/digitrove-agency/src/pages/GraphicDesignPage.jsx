@@ -37,7 +37,7 @@ const handleSubmit = async (e) => {
           "nxRxF1j0C-CucnBHw"
         ),
         
-        fetch('http://localhost:4000/api/v1/register', {
+        fetch('https://brandvision-2.onrender.com/api/v1/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
