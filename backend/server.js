@@ -7,9 +7,10 @@ const bodyparser = require("body-parser");
 const dbconnection = require("./database");
 
 app.use(cors({
-    origin: ["https://brand-vision-qkwf.vercel.app" , "http://localhost:5173"], 
+    origin: ["https://brand-vision-qkwf.vercel.app"], 
     credentials: true
 }));
+app.options("*", cors());
 
 app.use(express.json());
 app.use(bodyparser.json()); 
